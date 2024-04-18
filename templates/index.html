@@ -23,7 +23,7 @@
         input[type="file"] {
             display: none;
         }
-        .custom-file-upload, button[type="submit"] {
+        .custom-file-upload, button[type="submit"], button[type="button"] {
             display: inline-block;
             background-color: #000;
             color: #fff;
@@ -34,7 +34,7 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-        .custom-file-upload:hover, button[type="submit"]:hover {
+        .custom-file-upload:hover, button[type="submit"]:hover, button[type="button"]:hover {
             background-color: #333;
         }
         .file-label {
@@ -49,6 +49,10 @@
             margin-top: 10px;
             display: none;
         }
+        .translated-files {
+            margin-top: 20px;
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -61,6 +65,19 @@
                 <button type="submit" class="custom-file-upload">Upload</button>
             </form>
             <div id="error-message" class="error-message">Please select at least one file.</div>
+            <div id="translated-files" class="translated-files">
+                {% if translated_files %}
+                    <h2>Translated Files:</h2>
+                    <ul>
+                        {% for file_path in translated_files %}
+                            <li><a href="{{ file_path }}">{{ file_path }}</a></li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+            <form id="translate-form" action="/translate" method="POST">
+                <button type="button" onclick="startTranslation()" class="custom-file-upload">Translate!</button>
+            </form>
         </div>
     </div>
     <script>
@@ -71,6 +88,10 @@
                 event.preventDefault();
             }
         });
+
+        function startTranslation() {
+            document.getElementById("translate-form").submit();
+        }
     </script>
 </body>
 </html>

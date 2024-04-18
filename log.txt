@@ -26,3 +26,44 @@ File Written: Glory Glory_mixdown.pkf
 [2024-04-18 20:33:31] Files Unzipped: uploads/ethik arbeitsauftrag.zip
 [2024-04-18 20:34:01] File Written: testdoc.docx
 [2024-04-18 20:34:01] File Moved to Queue: testdoc.docx
+[2024-04-18 20:38:34] File Written: testdoc.docx
+[2024-04-18 20:38:34] File Moved to Queue: testdoc.docx
+[2024-04-18 21:00:06] File Written: testdoc.docx
+[2024-04-18 21:00:06] File Moved to Queue: testdoc.docx
+[2024-04-18 21:02:08] File Written: testdoc.docx
+[2024-04-18 21:02:08] File Moved to Queue: testdoc.docx
+[2024-04-18 21:05:10] File Written: testdoc.docx
+[2024-04-18 21:05:10] File Moved to Queue: testdoc.docx
+[2024-04-18 21:05:16] Translated 'testdoc.docx' and saved as 'translated_testdoc.docx'
+[2024-04-18 21:05:54] File Written: testdoc.docx
+[2024-04-18 21:05:54] File Moved to Queue: testdoc.docx
+[2024-04-18 21:06:00] Translated 'testdoc.docx' and saved as 'translated_testdoc.docx'
+[2024-04-18 21:06:32] File Written: testdoc.docx
+[2024-04-18 21:06:32] File Moved to Queue: testdoc.docx
+[2024-04-18 21:06:38] Translated 'testdoc.docx' and saved as 'translated_testdoc.docx'
+[2024-04-18 21:08:46] File Written: pdf pre-print.pdf
+[2024-04-18 21:08:46] File Moved to Queue: pdf pre-print.pdf
+[2024-04-18 21:08:46] File Written: testdoc.docx
+[2024-04-18 21:08:46] File Moved to Queue: testdoc.docx
+[2024-04-18 21:08:58] Error translating document 'pdf pre-print.pdf': Error occurred while translating document: Source and target language are equal., document handle: Document ID: 39428DCE856E270917A41F8622E0FFB5, key: 0810AD8CE223DA00101D78770661771EF65E85E6D24341E99E885BEB1AD8C4CE
+[2024-04-18 21:09:04] Translated 'testdoc.docx' and saved as 'translated_testdoc.docx'
+[2024-04-18 21:12:31] File Written: cv.docx
+[2024-04-18 21:12:31] File Moved to Queue: cv.docx
+[2024-04-18 21:12:31] File Written: Forschungsarbeit 2.docx
+[2024-04-18 21:12:31] File Moved to Queue: Forschungsarbeit 2.docx
+[2024-04-18 21:12:37] Translated 'testdoc.docx' and saved as 'translated_testdoc.docx'
+[2024-04-18 21:12:38] Error translating document 'cv.docx': Error occurred while translating document: Source and target language are equal., document handle: Document ID: 96E0C52E75CC57D601A28E636299EAF4, key: B569178C921BD1EA03242B6906BFADC4647A63AD977522525C04EE67BAC45224
+[2024-04-18 21:12:39] Error translating document 'Forschungsarbeit 2.docx': Error occurred while translating document: Source and target language are equal., document handle: Document ID: 23761C05713C528C5D655C750266C1C7, key: D0BE3B09CC2C6D055B93CB648D42AEC521C85402433980EC58B473684DA0C3CD
+[2024-04-18 21:19:13] File Written: 2_5443005487215807631.pdf
+[2024-04-18 21:19:13] File Moved to Queue: 2_5443005487215807631.pdf
+[2024-04-18 21:19:13] File Written: geschichte-1-2.lauterbach.pdf
+[2024-04-18 21:19:13] File Moved to Queue: geschichte-1-2.lauterbach.pdf
+[2024-04-18 21:19:31] Translated '2_5443005487215807631.pdf' and saved as 'translated_2_5443005487215807631.pdf'
+[2024-04-18 21:19:49] Translated 'geschichte-1-2.lauterbach.pdf' and saved as 'translated_geschichte-1-2.lauterbach.pdf'
+[2024-04-18 21:22:38] File Written: 2_5443005487215807631.pdf
+[2024-04-18 21:22:38] File Moved to Queue: 2_5443005487215807631.pdf
+[2024-04-18 21:22:38] File Written: geschichte-1-2.lauterbach.pdf
+[2024-04-18 21:22:38] File Moved to Queue: geschichte-1-2.lauterbach.pdf
+[2024-04-18 21:23:16] Translated files zipped: translated_files_2024-04-18_21-23-16.zip
+[2024-04-18 21:22:56] Translated '2_5443005487215807631.pdf' and saved as 'translated_2_5443005487215807631.pdf'
+[2024-04-18 21:23:16] Translated 'geschichte-1-2.lauterbach.pdf' and saved as 'translated_geschichte-1-2.lauterbach.pdf'
