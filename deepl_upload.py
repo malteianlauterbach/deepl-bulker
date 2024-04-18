@@ -9,6 +9,7 @@ QUEUE_FOLDER = 'queue'
 LOG_FILE = 'translation_log.txt'
 OUTPUT_FOLDER = 'output'
 
+
 def translate_and_upload_documents():
   with open(LOG_FILE, 'a') as log:
     for filename in os.listdir(QUEUE_FOLDER):

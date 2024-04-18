@@ -22,3 +22,7 @@ File Written: Glory Glory_mixdown.pkf
 [2024-04-18 20:30:42] Files Unzipped: uploads/ethik arbeitsauftrag.zip
 [2024-04-18 20:32:06] File Written: ethik arbeitsauftrag.zip
 [2024-04-18 20:32:06] Files Unzipped: uploads/ethik arbeitsauftrag.zip
+[2024-04-18 20:33:31] File Written: ethik arbeitsauftrag.zip
+[2024-04-18 20:33:31] Files Unzipped: uploads/ethik arbeitsauftrag.zip
+[2024-04-18 20:34:01] File Written: testdoc.docx
+[2024-04-18 20:34:01] File Moved to Queue: testdoc.docx

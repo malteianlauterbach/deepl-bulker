@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Upload</title>
+    <title>Submit Files to Deepl API</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,9 +41,13 @@
             cursor: pointer;
         }
         .error-message {
-            color: red;
-            font-size: 12px;
-            margin-top: 5px;
+            color: #fff;
+            background-color: #ff6347;
+            border: 1px solid #ff6347;
+            border-radius: 4px;
+            padding: 8px;
+            margin-top: 10px;
+            display: none;
         }
     </style>
 </head>
@@ -55,8 +59,8 @@
                 <label for="file-upload" class="custom-file-upload">Select Files</label>
                 <input id="file-upload" type="file" name="files" multiple>
                 <button type="submit" class="custom-file-upload">Upload</button>
-                <div id="error-message" class="error-message" style="display: none;">Please select at least one file.</div>
             </form>
+            <div id="error-message" class="error-message">Please select at least one file.</div>
         </div>
     </div>
     <script>
