@@ -64,7 +64,15 @@ def translate_and_upload_documents():
         # Handle other DeepL errors
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         log.write(f"[{timestamp}] Error occurred: {error}\n")
-        
+
+    # Zip the translated files
+    zip_file_name = f"translated_files_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.zip"
+    with zipfile.ZipFile(zip_file_name, 'w') as zipf:
+      for file_path in translated_files:
+        zipf.write(file_path, os.path.basename(file_path))
+
+    log_to_file(f'Translated files zipped: {zip_file_name}')
+
   return translated_files  # Return the list of translated files
 
 
