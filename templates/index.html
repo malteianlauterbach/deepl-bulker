@@ -49,9 +49,9 @@
             margin-top: 10px;
             display: none;
         }
-        .translated-files {
+        .download-button {
+            display: none;
             margin-top: 20px;
-            text-align: left;
         }
     </style>
 </head>
@@ -65,19 +65,7 @@
                 <button type="submit" class="custom-file-upload">Upload</button>
             </form>
             <div id="error-message" class="error-message">Please select at least one file.</div>
-            <div id="translated-files" class="translated-files">
-                {% if translated_files %}
-                    <h2>Translated Files:</h2>
-                    <ul>
-                        {% for file_path in translated_files %}
-                            <li><a href="{{ file_path }}">{{ file_path }}</a></li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
-            </div>
-            <form id="translate-form" action="/translate" method="POST">
-                <button type="button" onclick="startTranslation()" class="custom-file-upload">Translate!</button>
-            </form>
+            <button id="download-button" class="download-button" onclick="downloadZip()">Download</button>
         </div>
     </div>
     <script>
@@ -89,8 +77,14 @@
             }
         });
 
-        function startTranslation() {
-            document.getElementById("translate-form").submit();
+        // Function to show the download button after 60 seconds
+        setTimeout(function() {
+            document.getElementById("download-button").style.display = "block";
+        }, 60000);
+
+        // Function to handle download button click
+        function downloadZip() {
+            window.location.href = '/download';
         }
     </script>
 </body>

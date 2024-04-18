@@ -2,7 +2,7 @@ import os
 import zipfile
 import deepl
 from datetime import datetime
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, send_file, redirect, url_for
 
 app = Flask(__name__)
 
@@ -66,14 +66,21 @@ def translate_and_upload_documents():
         log.write(f"[{timestamp}] Error occurred: {error}\n")
 
     # Zip the translated files
-    zip_file_name = f"translated_files_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.zip"
+    zip_file_name = 'output.zip'
     with zipfile.ZipFile(zip_file_name, 'w') as zipf:
       for file_path in translated_files:
         zipf.write(file_path, os.path.basename(file_path))
 
     log_to_file(f'Translated files zipped: {zip_file_name}')
 
-  return translated_files  # Return the list of translated files
+  return zip_file_name  # Return the name of the zip file
+
+
+# Define the download route
+@app.route('/download')
+def download_file():
+  zip_file_path = translate_and_upload_documents()
+  return send_file(zip_file_path, as_attachment=True)
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -96,6 +103,8 @@ def index():
     print(f"Total count of processed files: {PROCESSED_COUNT}")
     translated_files = translate_and_upload_documents(
     )  # Call translation function after processing files
+    return redirect(url_for('download_file'))  # Redirect to the download route
+
   return render_template('index.html', translated_files=translated_files)
 
 
