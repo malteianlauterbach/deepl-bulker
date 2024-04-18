@@ -21,10 +21,10 @@
             border-radius: 8px;
         }
         input[type="file"] {
-            display: block;
-            margin: 0 auto 10px;
+            display: none;
         }
-        button[type="submit"] {
+        .custom-file-upload {
+            display: inline-block;
             background-color: #000;
             color: #fff;
             border: none;
@@ -34,8 +34,11 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-        button[type="submit"]:hover {
+        .custom-file-upload:hover {
             background-color: #333;
+        }
+        .file-label {
+            cursor: pointer;
         }
     </style>
 </head>
@@ -44,7 +47,8 @@
         <div class="upload-form">
             <h1>Upload Files</h1>
             <form action="/" method="POST" enctype="multipart/form-data">
-                <input type="file" name="files" multiple>
+                <label for="file-upload" class="custom-file-upload">Select Files</label>
+                <input id="file-upload" type="file" name="files" multiple>
                 <button type="submit">Upload</button>
             </form>
         </div>
