@@ -98,3 +98,15 @@ File Written: Glory Glory_mixdown.pkf
 [2024-04-18 21:45:26] Translated files zipped: output.zip
 [2024-04-18 21:45:20] Translated 'geschichte-1-2.lauterbach.pdf' and saved as 'translated_geschichte-1-2.lauterbach.pdf'
 [2024-04-18 21:45:26] Translated 'ethik arbeitsauftrag.docx' and saved as 'translated_ethik arbeitsauftrag.docx'
+[2024-04-19 07:36:27] File Written: 14.4 Rechnung.pdf
+[2024-04-19 07:36:27] File Moved to Queue: 14.4 Rechnung.pdf
+[2024-04-19 07:36:45] Translated files zipped: output.zip
+[2024-04-19 07:36:45] Translated '14.4 Rechnung.pdf' and saved as 'translated_14.4 Rechnung.pdf'
+[2024-04-19 07:37:02] Translated files zipped: output.zip
+[2024-04-19 07:37:02] Translated '14.4 Rechnung.pdf' and saved as 'translated_14.4 Rechnung.pdf'
+[2024-04-19 07:38:14] File Written: tutorium 02 lauterbach lösung.pdf
+[2024-04-19 07:38:14] File Moved to Queue: tutorium 02 lauterbach lösung.pdf
+[2024-04-19 07:38:32] Translated files zipped: output.zip
+[2024-04-19 07:38:32] Translated 'tutorium 02 lauterbach lösung.pdf' and saved as 'translated_tutorium 02 lauterbach lösung.pdf'
+[2024-04-19 07:38:50] Translated files zipped: output.zip
+[2024-04-19 07:38:50] Translated 'tutorium 02 lauterbach lösung.pdf' and saved as 'translated_tutorium 02 lauterbach lösung.pdf'

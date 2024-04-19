@@ -3,11 +3,10 @@ import zipfile
 import deepl
 from datetime import datetime
 from flask import Flask, request, render_template, send_file, redirect, url_for
-import logging
+import webbrowser
 
 app = Flask(__name__)
-logging.basicConfig()
-logging.getLogger('deepl').setLevel(logging.DEBUG)
+
 UPLOAD_FOLDER = 'uploads'
 LOG_FILE = 'log.txt'
 QUEUE_FOLDER = 'queue'
@@ -23,7 +22,7 @@ if not os.path.exists(QUEUE_FOLDER):
 if not os.path.exists(OUTPUT_FOLDER):
   os.makedirs(OUTPUT_FOLDER)
 
-auth_key = '25f7e418-b8ee-4ee1-97e6-5b68253a90f2'  # Replace with your DeepL API key
+auth_key = '25f7e418-b8ee-4ee1-97e6-5b68253a90f2'  
 translator = deepl.Translator(auth_key)
 
 
@@ -105,6 +104,8 @@ def index():
     print(f"Total count of processed files: {PROCESSED_COUNT}")
     translated_files = translate_and_upload_documents(
     )  # Call translation function after processing files
+    webbrowser.open_new_tab('/download'
+                            )  # Open a new tab with the download route
     return redirect(url_for('download_file'))  # Redirect to the download route
 
   return render_template('index.html', translated_files=translated_files)
