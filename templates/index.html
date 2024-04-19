@@ -14,7 +14,6 @@
             align-items: center;
             height: 100vh;
         }
-      
         .upload-form {
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -60,28 +59,42 @@
     <div class="container">
         <div class="upload-form">
             <h1>Upload Files</h1>
-            <h2> Download will proceed once completed.</h2>
-            
+            <h2>Download will proceed once completed.</h2>
 
             <form id="upload-form" action="/" method="POST" enctype="multipart/form-data">
                 <label for="file-upload" class="custom-file-upload">Select Files</label>
-                <input id="file-upload" type="file" name="files" multiple>
+                <input id="file-upload" type="file" name="files" multiple accept=".docx,.doc,.txt,.xlsx,.pdf,.xliff,.xlf,.html, .zip, .rar, .7z, .tar, .gz, .bz2, .tar.gz, .t">
                 <button type="submit" class="custom-file-upload">Upload</button>
             </form>
             <div id="error-message" class="error-message">Please select at least one file.</div>
-           
+            <div id="file-error-message" class="error-message" style="display: none;">Invalid file type. Allowed types: .docx, .doc, .txt, .xlsx, .pdf, .xliff, .xlf, , .pptx, .html</div>
+            <div id="download-button" class="download-button">
+                <a href="/download" class="custom-file-upload">Download</a>
+            </div>
         </div>
     </div>
     <script>
         document.getElementById("upload-form").addEventListener("submit", function(event) {
             var files = document.getElementById("file-upload").files;
+            var allowedTypes = [".docx", ".doc", ".txt", ".xlsx", ".pdf", ".xliff", ".xlf",".pptx", ".html", ".zip"];
+            var validFiles = true;
+            for (var i = 0; i < files.length; i++) {
+                var fileName = files[i].name;
+                var fileType = fileName.substring(fileName.lastIndexOf('.')).toLowerCase();
+                if (!allowedTypes.includes(fileType)) {
+                    validFiles = false;
+                    break;
+                }
+            }
             if (files.length === 0) {
                 document.getElementById("error-message").style.display = "block";
                 event.preventDefault();
+            } else if (!validFiles) {
+                document.getElementById("file-error-message").style.display = "block";
+                event.preventDefault();
             }
         });
-        }
     </script>
-  <h5> Deepl Bulk Translator built by Malte Ian Lauterbach for BSN. Contact ian(at)patakh.com for Debugging. Include python log, if possible.</h5>
+   <h5> Deepl Bulk Translator built by Malte Ian Lauterbach for BSN. Contact ian(at)patakh.com for Debugging. Include python log, if possible.</h5>
 </body>
 </html>
