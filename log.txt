@@ -26,3 +26,45 @@
 [2024-04-19 08:56:42] Translated 'alpeh bsn proposal.pdf' and saved as 'translated_alpeh bsn proposal.pdf'
 [2024-04-19 08:56:43] Translated 'alpeh bsn proposal.pdf' and saved as 'translated_alpeh bsn proposal.pdf'
 [2024-04-19 08:56:43] Translated 'alpeh bsn proposal.pdf' and saved as 'translated_alpeh bsn proposal.pdf'
+[2024-04-19 09:13:51] Translated files zipped: output.zip
+[2024-04-19 09:13:51] Translated files downloaded: output.zip
+[2024-04-19 10:04:52] File Written: Test Folder.zip
+[2024-04-19 10:04:52] Files Unzipped: uploads/Test Folder.zip
+[2024-04-19 10:04:52] Total count of processed files: 1
+[2024-04-19 10:04:56] Translated files zipped: output.zip
+[2024-04-19 10:04:53] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+[2024-04-19 10:04:54] Error occurred: Bad request, message: Failed to get the document_type from the file extension (Untitled.pages).
+[2024-04-19 10:04:54] Error occurred: Bad request, message: Failed to get the document_type from the file extension (Untitled copy 2.pages).
+[2024-04-19 10:04:54] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+[2024-04-19 10:04:54] Error occurred: Bad request, message: Failed to get the document_type from the file extension (Untitled copy.pages).
+[2024-04-19 10:04:55] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+[2024-04-19 10:04:55] Error occurred: Bad request, message: Failed to get the document_type from the file extension (Untitled copy 3.pages).
+[2024-04-19 10:04:55] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+[2024-04-19 10:04:55] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._Untitled.pages).
+[2024-04-19 10:04:55] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._Untitled copy 2.pages).
+[2024-04-19 10:04:55] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+[2024-04-19 10:04:55] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._Untitled copy.pages).
+[2024-04-19 10:04:56] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+[2024-04-19 10:04:56] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._Untitled copy 3.pages).
+[2024-04-19 10:04:58] Translated files zipped: output.zip
+[2024-04-19 10:04:56] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+[2024-04-19 10:04:56] Error occurred: Bad request, message: Failed to get the document_type from the file extension (Untitled.pages).
+[2024-04-19 10:04:57] Error occurred: Bad request, message: Failed to get the document_type from the file extension (Untitled copy 2.pages).
+[2024-04-19 10:04:57] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+[2024-04-19 10:04:57] Error occurred: Bad request, message: Failed to get the document_type from the file extension (Untitled copy.pages).
+[2024-04-19 10:04:57] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+[2024-04-19 10:04:57] Error occurred: Bad request, message: Failed to get the document_type from the file extension (Untitled copy 3.pages).
+[2024-04-19 10:04:57] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+[2024-04-19 10:04:58] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._Untitled.pages).
+[2024-04-19 10:04:58] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._Untitled copy 2.pages).
+[2024-04-19 10:04:58] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+[2024-04-19 10:04:58] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._Untitled copy.pages).
+[2024-04-19 10:04:58] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+[2024-04-19 10:04:58] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._Untitled copy 3.pages).
+[2024-04-19 10:04:58] Translated files downloaded: output.zip
+[2024-04-19 10:07:02] File Written: Test Folder.zip
+[2024-04-19 10:07:02] Files Unzipped: uploads/Test Folder.zip
+[2024-04-19 10:07:02] Total count of processed files: 1
+[2024-04-19 10:14:38] File Written: test2.zip
+[2024-04-19 10:14:38] Files Unzipped: uploads/test2.zip
+[2024-04-19 10:14:38] Total count of processed files: 1

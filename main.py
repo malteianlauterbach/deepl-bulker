@@ -40,7 +40,7 @@ def log_to_file(message):
 
 def translate_and_upload_documents():
   translated_files = []
-  with open(LOG_FILE, 'a') as log:
+  with open(LOG_FILE, 'a') as log: #TODO: Walk subfolders
     for filename in os.listdir(QUEUE_FOLDER):
       input_path = os.path.join(QUEUE_FOLDER, filename)
       output_path = os.path.join(OUTPUT_FOLDER, f"translated_{filename}")
