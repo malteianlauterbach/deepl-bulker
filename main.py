@@ -81,8 +81,9 @@ def translate_and_upload_documents():
 @app.route('/download')
 def download_file():
   zip_file_path = translate_and_upload_documents()
+  log_to_file(f'Translated files downloaded: {zip_file_path}')
   return send_file(zip_file_path, as_attachment=True)
-
+  
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -102,6 +103,7 @@ def index():
         log_to_file(f'File Moved to Queue: {filename}')
       PROCESSED_COUNT += 1
     print(f"Total count of processed files: {PROCESSED_COUNT}")
+    log_to_file(f'Total count of processed files: {PROCESSED_COUNT}')
     translated_files = translate_and_upload_documents(
     )  # Call translation function after processing files
     webbrowser.open_new_tab('/download'
