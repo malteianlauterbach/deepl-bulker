@@ -124,6 +124,44 @@
       }
     });
   </script>
+  <script>
+    document.getElementById("upload-form").addEventListener("submit", function(event) {
+      var files = document.getElementById("file-upload").files;
+      if (files.length === 0) {
+        document.getElementById("error-message").innerText = "Please select at least one file.";
+        document.getElementById("error-message").style.display = "block";
+        event.preventDefault();
+      } else {
+        var formData = new FormData();
+        for (var i = 0; i < files.length; i++) {
+          formData.append('files', files[i]);
+        }
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/');
+        xhr.upload.addEventListener('progress', function(e) {
+          if (e.lengthComputable) {
+            var percent = (e.loaded / e.total) * 100;
+            document.querySelector('.progress-bar').style.width = percent + '%';
+            document.querySelector('.progress-bar').setAttribute('aria-valuenow', percent);
+          }
+        });
+        xhr.addEventListener('error', function() {
+          document.getElementById("error-message").innerText = "An error occurred while uploading files.";
+          document.getElementById("error-message").style.display = "block";
+        });
+        xhr.addEventListener('load', function() {
+          if (xhr.status === 200) {
+            // Successful upload
+            // Redirect or do something else
+          } else {
+            document.getElementById("error-message").innerText = "Server returned an error: " + xhr.statusText;
+            document.getElementById("error-message").style.display = "block";
+          }
+        });
+        xhr.send(formData);
+      }
+    });
+  </script>
 
 </body>
 </html>
