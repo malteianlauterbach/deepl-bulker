@@ -22,7 +22,7 @@ if not os.path.exists(QUEUE_FOLDER):
 if not os.path.exists(OUTPUT_FOLDER):
   os.makedirs(OUTPUT_FOLDER)
 
-auth_key = '25f7e418-b8ee-4ee1-97e6-5b68253a90f2'  
+auth_key = '25f7e418-b8ee-4ee1-97e6-5b68253a90f2'
 translator = deepl.Translator(auth_key)
 
 
@@ -40,9 +40,9 @@ def log_to_file(message):
 
 def translate_and_upload_documents():
   translated_files = []
-  with open(LOG_FILE, 'a') as log: #TODO: Walk subfolders
-    for filename in os.listdir(QUEUE_FOLDER):
-      input_path = os.path.join(QUEUE_FOLDER, filename)
+  for root, dirs, files in os.walk(QUEUE_FOLDER):
+    for filename in files:
+      input_path = os.path.join(root, filename)
       output_path = os.path.join(OUTPUT_FOLDER, f"translated_{filename}")
       try:
         # Translate the document
@@ -50,7 +50,7 @@ def translate_and_upload_documents():
                                                     output_path,
                                                     target_lang="EN-US")
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        log.write(
+        log_to_file(
             f"[{timestamp}] Translated '{filename}' and saved as 'translated_{filename}'\n"
         )
         translated_files.append(
@@ -58,21 +58,33 @@ def translate_and_upload_documents():
       except deepl.DocumentTranslationException as error:
         # Handle translation errors
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        log.write(
+        log_to_file(
             f"[{timestamp}] Error translating document '{filename}': {error}\n"
         )
       except deepl.DeepLException as error:
         # Handle other DeepL errors
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        log.write(f"[{timestamp}] Error occurred: {error}\n")
+        log_to_file(f"[{timestamp}] Error occurred: {error}\n")
+        print(f"Error occurred: {error}")  # Output error message to console
+        log_to_file(
+            f"[{timestamp}] Error occurred: {error}")  # Log error message
 
-    # Zip the translated files
-    zip_file_name = 'output.zip'
-    with zipfile.ZipFile(zip_file_name, 'w') as zipf:
-      for file_path in translated_files:
-        zipf.write(file_path, os.path.basename(file_path))
+      if filename[-5:] not in [
+          ".docx", ".doc", ".txt", ".xlsx", ".pdf", ".xliff", ".xlf", ".pptx",
+          ".html"
+      ]:
+        print(f"Invalid file type detected: {filename}"
+              )  # Output error message to console
+        log_to_file(f"[{timestamp}] Invalid file type detected: {filename}"
+                    )  # Log error message
 
-    log_to_file(f'Translated files zipped: {zip_file_name}')
+  # Zip the translated files
+  zip_file_name = 'output.zip'
+  with zipfile.ZipFile(zip_file_name, 'w') as zipf:
+    for file_path in translated_files:
+      zipf.write(file_path, os.path.relpath(file_path, OUTPUT_FOLDER))
+
+  log_to_file(f'Translated files zipped: {zip_file_name}')
 
   return zip_file_name  # Return the name of the zip file
 
@@ -83,7 +95,7 @@ def download_file():
   zip_file_path = translate_and_upload_documents()
   log_to_file(f'Translated files downloaded: {zip_file_path}')
   return send_file(zip_file_path, as_attachment=True)
-  
+
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -106,8 +118,8 @@ def index():
     log_to_file(f'Total count of processed files: {PROCESSED_COUNT}')
     translated_files = translate_and_upload_documents(
     )  # Call translation function after processing files
-    webbrowser.open_new_tab('/download'
-                            )  # Open a new tab with the download route
+    webbrowser.open_new_tab(
+        '/download')  # Open a new tab with the download route
     return redirect(url_for('download_file'))  # Redirect to the download route
 
   return render_template('index.html', translated_files=translated_files)

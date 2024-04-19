@@ -68,3 +68,128 @@
 [2024-04-19 10:14:38] File Written: test2.zip
 [2024-04-19 10:14:38] Files Unzipped: uploads/test2.zip
 [2024-04-19 10:14:38] Total count of processed files: 1
+[2024-04-19 12:27:28] File Written: test2.zip
+[2024-04-19 12:27:29] Files Unzipped: uploads/test2.zip
+[2024-04-19 12:27:29] Total count of processed files: 1
+[2024-04-19 12:30:27] File Written: test2.zip
+[2024-04-19 12:30:27] Files Unzipped: uploads/test2.zip
+[2024-04-19 12:30:27] Total count of processed files: 1
+[2024-04-19 12:32:49] File Written: Test Folder.zip
+[2024-04-19 12:32:49] Files Unzipped: uploads/Test Folder.zip
+[2024-04-19 12:32:49] Total count of processed files: 1
+[2024-04-19 12:32:50] [2024-04-19 12:32:50] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+
+[2024-04-19 12:32:50] [2024-04-19 12:32:50] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+[2024-04-19 12:32:50] [2024-04-19 12:32:50] Invalid file type detected: .DS_Store
+[2024-04-19 12:33:09] [2024-04-19 12:33:09] Translated 'alpeh bsn proposal.pdf' and saved as 'translated_alpeh bsn proposal.pdf'
+
+[2024-04-19 12:33:09] [2024-04-19 12:33:09] Invalid file type detected: alpeh bsn proposal.pdf
+[2024-04-19 12:33:09] [2024-04-19 12:33:09] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+
+[2024-04-19 12:33:09] [2024-04-19 12:33:09] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+[2024-04-19 12:33:09] [2024-04-19 12:33:09] Invalid file type detected: .DS_Store
+[2024-04-19 12:33:27] [2024-04-19 12:33:27] Translated 'alpeh bsn proposal.pdf' and saved as 'translated_alpeh bsn proposal.pdf'
+
+[2024-04-19 12:33:27] [2024-04-19 12:33:27] Invalid file type detected: alpeh bsn proposal.pdf
+[2024-04-19 12:33:27] [2024-04-19 12:33:27] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+
+[2024-04-19 12:33:27] [2024-04-19 12:33:27] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+[2024-04-19 12:33:27] [2024-04-19 12:33:27] Invalid file type detected: .DS_Store
+[2024-04-19 12:33:44] [2024-04-19 12:33:44] Translated 'alpeh bsn proposal.pdf' and saved as 'translated_alpeh bsn proposal.pdf'
+
+[2024-04-19 12:33:44] [2024-04-19 12:33:44] Invalid file type detected: alpeh bsn proposal.pdf
+[2024-04-19 12:34:07] [2024-04-19 12:34:07] Translated 'alpeh bsn proposal.pdf' and saved as 'translated_alpeh bsn proposal.pdf'
+
+[2024-04-19 12:34:07] [2024-04-19 12:34:07] Invalid file type detected: alpeh bsn proposal.pdf
+[2024-04-19 12:34:07] [2024-04-19 12:34:07] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+
+[2024-04-19 12:34:07] [2024-04-19 12:34:07] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+[2024-04-19 12:34:07] [2024-04-19 12:34:07] Invalid file type detected: ._.DS_Store
+[2024-04-19 12:34:08] [2024-04-19 12:34:08] Error translating document '._alpeh bsn proposal.pdf': Error occurred while translating document: Failed to open the uploaded document., document handle: Document ID: 83554EBF85E43B2743172886CEC7F2D7, key: 53521757E8796D30B5D352490E638FAA7BA6FE8B75FE0A608E5958E7B9CD63A0
+
+[2024-04-19 12:34:08] [2024-04-19 12:34:08] Invalid file type detected: ._alpeh bsn proposal.pdf
+[2024-04-19 12:34:08] [2024-04-19 12:34:08] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+
+[2024-04-19 12:34:08] [2024-04-19 12:34:08] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+[2024-04-19 12:34:08] [2024-04-19 12:34:08] Invalid file type detected: ._.DS_Store
+[2024-04-19 12:34:09] [2024-04-19 12:34:09] Error translating document '._alpeh bsn proposal.pdf': Error occurred while translating document: Failed to open the uploaded document., document handle: Document ID: 6E28C1D5A8465224034DFAD301820AF0, key: 647DF122C08896D477B06FDBE639CD6ED09CB217C16DBFD88B192A503EAFC7A6
+
+[2024-04-19 12:34:09] [2024-04-19 12:34:09] Invalid file type detected: ._alpeh bsn proposal.pdf
+[2024-04-19 12:34:09] [2024-04-19 12:34:09] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+
+[2024-04-19 12:34:09] [2024-04-19 12:34:09] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+[2024-04-19 12:34:09] [2024-04-19 12:34:09] Invalid file type detected: ._.DS_Store
+[2024-04-19 12:34:09] [2024-04-19 12:34:09] Error translating document '._alpeh bsn proposal.pdf': Error occurred while translating document: Failed to open the uploaded document., document handle: Document ID: 7621AD55441892E3BD1C4F4852FA84CE, key: B0640BA802568269DDA68FBEFE54AEF2219220D00F414E3924C3BEF8711A5A55
+
+[2024-04-19 12:34:09] [2024-04-19 12:34:09] Invalid file type detected: ._alpeh bsn proposal.pdf
+[2024-04-19 12:34:10] [2024-04-19 12:34:10] Error translating document '._alpeh bsn proposal.pdf': Error occurred while translating document: Failed to open the uploaded document., document handle: Document ID: F5199D4E3A102C6C18AAE3201ED96887, key: 42B2F6585563627D34C9E07F9BDDF5CBCA71AC72BD5EF94245488061682A9514
+
+[2024-04-19 12:34:10] [2024-04-19 12:34:10] Invalid file type detected: ._alpeh bsn proposal.pdf
+[2024-04-19 12:34:10] [2024-04-19 12:34:10] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+
+[2024-04-19 12:34:10] [2024-04-19 12:34:10] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+[2024-04-19 12:34:10] [2024-04-19 12:34:10] Invalid file type detected: ._.DS_Store
+[2024-04-19 12:34:10] [2024-04-19 12:34:10] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._Untitled.pages).
+
+[2024-04-19 12:34:10] [2024-04-19 12:34:10] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._Untitled.pages).
+[2024-04-19 12:34:10] [2024-04-19 12:34:10] Invalid file type detected: ._Untitled.pages
+[2024-04-19 12:34:10] [2024-04-19 12:34:10] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._Untitled copy 2.pages).
+
+[2024-04-19 12:34:10] [2024-04-19 12:34:10] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._Untitled copy 2.pages).
+[2024-04-19 12:34:10] [2024-04-19 12:34:10] Invalid file type detected: ._Untitled copy 2.pages
+[2024-04-19 12:34:10] [2024-04-19 12:34:10] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+
+[2024-04-19 12:34:10] [2024-04-19 12:34:10] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+[2024-04-19 12:34:10] [2024-04-19 12:34:10] Invalid file type detected: ._.DS_Store
+[2024-04-19 12:34:11] [2024-04-19 12:34:11] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._Untitled copy.pages).
+
+[2024-04-19 12:34:11] [2024-04-19 12:34:11] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._Untitled copy.pages).
+[2024-04-19 12:34:11] [2024-04-19 12:34:11] Invalid file type detected: ._Untitled copy.pages
+[2024-04-19 12:34:11] [2024-04-19 12:34:11] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+
+[2024-04-19 12:34:11] [2024-04-19 12:34:11] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._.DS_Store).
+[2024-04-19 12:34:11] [2024-04-19 12:34:11] Invalid file type detected: ._.DS_Store
+[2024-04-19 12:34:11] [2024-04-19 12:34:11] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._Untitled copy 3.pages).
+
+[2024-04-19 12:34:11] [2024-04-19 12:34:11] Error occurred: Bad request, message: Failed to get the document_type from the file extension (._Untitled copy 3.pages).
+[2024-04-19 12:34:11] [2024-04-19 12:34:11] Invalid file type detected: ._Untitled copy 3.pages
+[2024-04-19 12:34:11] [2024-04-19 12:34:11] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+
+[2024-04-19 12:34:11] [2024-04-19 12:34:11] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+[2024-04-19 12:34:11] [2024-04-19 12:34:11] Invalid file type detected: .DS_Store
+[2024-04-19 12:34:11] [2024-04-19 12:34:11] Error occurred: Bad request, message: Failed to get the document_type from the file extension (Untitled.pages).
+
+[2024-04-19 12:34:11] [2024-04-19 12:34:11] Error occurred: Bad request, message: Failed to get the document_type from the file extension (Untitled.pages).
+[2024-04-19 12:34:11] [2024-04-19 12:34:11] Invalid file type detected: Untitled.pages
+[2024-04-19 12:34:12] [2024-04-19 12:34:12] Error occurred: Bad request, message: Failed to get the document_type from the file extension (Untitled copy 2.pages).
+
+[2024-04-19 12:34:12] [2024-04-19 12:34:12] Error occurred: Bad request, message: Failed to get the document_type from the file extension (Untitled copy 2.pages).
+[2024-04-19 12:34:12] [2024-04-19 12:34:12] Invalid file type detected: Untitled copy 2.pages
+[2024-04-19 12:34:12] [2024-04-19 12:34:12] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+
+[2024-04-19 12:34:12] [2024-04-19 12:34:12] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+[2024-04-19 12:34:12] [2024-04-19 12:34:12] Invalid file type detected: .DS_Store
+[2024-04-19 12:34:12] [2024-04-19 12:34:12] Error occurred: Bad request, message: Failed to get the document_type from the file extension (Untitled copy.pages).
+
+[2024-04-19 12:34:12] [2024-04-19 12:34:12] Error occurred: Bad request, message: Failed to get the document_type from the file extension (Untitled copy.pages).
+[2024-04-19 12:34:12] [2024-04-19 12:34:12] Invalid file type detected: Untitled copy.pages
+[2024-04-19 12:34:12] [2024-04-19 12:34:12] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+
+[2024-04-19 12:34:12] [2024-04-19 12:34:12] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+[2024-04-19 12:34:12] [2024-04-19 12:34:12] Invalid file type detected: .DS_Store
+[2024-04-19 12:34:12] [2024-04-19 12:34:12] Error occurred: Bad request, message: Failed to get the document_type from the file extension (Untitled copy 3.pages).
+
+[2024-04-19 12:34:12] [2024-04-19 12:34:12] Error occurred: Bad request, message: Failed to get the document_type from the file extension (Untitled copy 3.pages).
+[2024-04-19 12:34:12] [2024-04-19 12:34:12] Invalid file type detected: Untitled copy 3.pages
+[2024-04-19 12:34:12] Translated files zipped: output.zip
+[2024-04-19 12:34:13] [2024-04-19 12:34:13] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+
+[2024-04-19 12:34:13] [2024-04-19 12:34:13] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+[2024-04-19 12:34:13] [2024-04-19 12:34:13] Invalid file type detected: .DS_Store
+[2024-04-19 12:34:30] [2024-04-19 12:34:30] Translated 'alpeh bsn proposal.pdf' and saved as 'translated_alpeh bsn proposal.pdf'
+
+[2024-04-19 12:34:30] [2024-04-19 12:34:30] Invalid file type detected: alpeh bsn proposal.pdf
+[2024-04-19 12:34:30] [2024-04-19 12:34:30] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+
+[2024-04-19 12:34:30] [2024-04-19 12:34:30] Error occurred: Bad request, message: Failed to get the document_type from the file extension (.DS_Store).
+[2024-04-19 12:34:30] [2024-04-19 12:34:30] Invalid file type detected: .DS_Store
