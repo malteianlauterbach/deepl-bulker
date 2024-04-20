@@ -248,3 +248,8 @@
 [2024-04-20 12:02:59] Emptying output directory.
 [2024-04-20 12:02:59] Creating empty directories.
 [2024-04-20 12:02:59] Removing existing output.zip file.
+[2024-04-20 12:45:06] Page reloaded. Resetting folders and zip file.
+[2024-04-20 12:45:06] Emptying queue directory.
+[2024-04-20 12:45:06] Emptying uploads directory.
+[2024-04-20 12:45:06] Emptying output directory.
+[2024-04-20 12:45:06] Creating empty directories.
