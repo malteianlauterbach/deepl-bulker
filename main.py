@@ -26,7 +26,7 @@ if not os.path.exists(QUEUE_FOLDER):
 if not os.path.exists(OUTPUT_FOLDER):
   os.makedirs(OUTPUT_FOLDER)
 
-auth_key = '25f7e418-b8ee-4ee1-97e6-5b68253a90f2'
+auth_key = 'YOUR_AUTH_KEY_HERE'
 translator = deepl.Translator(auth_key)
 
 
