@@ -18,3 +18,23 @@
 [2024-04-22 13:08:06] Error occurred: Authorization failure, check auth_key, message: The auth key is invalid or the auth key is expired
 [2024-04-22 13:08:07] Error occurred: Authorization failure, check auth_key, message: The auth key is invalid or the auth key is expired
 [2024-04-22 13:08:07] Translated files downloaded: output.zip
+[2024-04-22 13:26:41] Data submission received. Resetting folders and zip file.
+[2024-04-22 13:26:41] Emptying queue directory.
+[2024-04-22 13:26:41] Emptying uploads directory.
+[2024-04-22 13:26:41] Emptying output directory.
+[2024-04-22 13:26:41] Creating empty directories.
+[2024-04-22 13:26:41] Removing existing output.zip file.
+[2024-04-22 13:26:44] File Written: output.zip
+[2024-04-22 13:26:44] Files Unzipped: uploads/output.zip
+[2024-04-22 13:26:44] Total count of processed files: 1
+[2024-04-22 13:26:45] Simulated upload: '╨ƒ╤Ç╨╕╨║╨░╨╖ 11 ╨╛╤é 24.10.202309112023.pdf' saved as 'output/╨ƒ╤Ç╨╕╨║╨░╨╖ 11 ╨╛╤é 24.10.202309112023.pdf'
+[2024-04-22 13:26:46] Simulated upload: '╨ƒ╤Ç╨╕╨║╨░╨╖ 12 ╨╛╤é 24.10.202309112023.pdf' saved as 'output/╨ƒ╤Ç╨╕╨║╨░╨╖ 12 ╨╛╤é 24.10.202309112023.pdf'
+[2024-04-22 13:26:47] Simulated upload: '╨ƒ╤Ç╨╕╨║╨░╨╖ 13 ╨╛╤é 24.10.202309112023.pdf' saved as 'output/╨ƒ╤Ç╨╕╨║╨░╨╖ 13 ╨╛╤é 24.10.202309112023.pdf'
+[2024-04-22 13:26:48] Simulated upload: '╨ƒ╤Ç╨╕╨║╨░╨╖ 14 ╨╛╤é 24.10.202309112023.pdf' saved as 'output/╨ƒ╤Ç╨╕╨║╨░╨╖ 14 ╨╛╤é 24.10.202309112023.pdf'
+[2024-04-22 13:26:48] Translated files zipped: output.zip
+[2024-04-22 13:26:49] Simulated upload: '╨ƒ╤Ç╨╕╨║╨░╨╖ 11 ╨╛╤é 24.10.202309112023.pdf' saved as 'output/╨ƒ╤Ç╨╕╨║╨░╨╖ 11 ╨╛╤é 24.10.202309112023.pdf'
+[2024-04-22 13:26:50] Simulated upload: '╨ƒ╤Ç╨╕╨║╨░╨╖ 12 ╨╛╤é 24.10.202309112023.pdf' saved as 'output/╨ƒ╤Ç╨╕╨║╨░╨╖ 12 ╨╛╤é 24.10.202309112023.pdf'
+[2024-04-22 13:26:51] Simulated upload: '╨ƒ╤Ç╨╕╨║╨░╨╖ 13 ╨╛╤é 24.10.202309112023.pdf' saved as 'output/╨ƒ╤Ç╨╕╨║╨░╨╖ 13 ╨╛╤é 24.10.202309112023.pdf'
+[2024-04-22 13:26:52] Simulated upload: '╨ƒ╤Ç╨╕╨║╨░╨╖ 14 ╨╛╤é 24.10.202309112023.pdf' saved as 'output/╨ƒ╤Ç╨╕╨║╨░╨╖ 14 ╨╛╤é 24.10.202309112023.pdf'
+[2024-04-22 13:26:52] Translated files zipped: output.zip
+[2024-04-22 13:26:52] Translated files downloaded: output.zip
