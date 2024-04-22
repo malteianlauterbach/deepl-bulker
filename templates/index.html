@@ -55,22 +55,22 @@
         }
     </style>
 </head>
-<body>
+  <body>
     <div class="container">
         <div class="upload-form">
             <h1>Upload Files</h1>
             <h2>Download will proceed once completed.</h2>
 
-            <form id="upload-form" action="/" method="POST" enctype="multipart/form-data">
+            <form id="upload-form" action="/submit" method="POST" enctype="multipart/form-data">
+                <!-- Updated action to /submit -->
                 <label for="file-upload" class="custom-file-upload">Select Files</label>
                 <input id="file-upload" type="file" name="files" multiple accept=".docx,.doc,.txt,.xlsx,.pdf,.xliff,.xlf,.html, .zip, .rar, .7z, .tar, .gz, .bz2, .tar.gz, .t" size="1000000000">
                 <button type="submit" class="custom-file-upload">Upload</button>
             </form>
+            <!-- Remove download button -->
             <div id="error-message" class="error-message">Please select at least one file.</div>
             <div id="file-error-message" class="error-message" style="display: none;">Invalid file type. Allowed types: .docx, .doc, .txt, .xlsx, .pdf, .xliff, .xlf, , .pptx, .html</div>
-            <div id="download-button" class="download-button">
-                <a href="/download" class="custom-file-upload">Download</a>
-            </div>
+            <div id="processing-message" class="processing-message" style="display: none;">Thank you, files processing now.</div>
         </div>
     </div>
     <script>
@@ -92,77 +92,10 @@
             } else if (!validFiles) {
                 document.getElementById("file-error-message").style.display = "block";
                 event.preventDefault();
+            } else {
+                document.getElementById("processing-message").style.display = "block";
             }
         });
     </script>
-  <div class="progress">
-    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-  </div>
-
-   <h5> Deepl Bulk Translator built by Malte Ian Lauterbach for BSN. Contact ian(at)patakh.com for Debugging. Include python log, if possible.</h5>
-  <script>
-    document.getElementById("upload-form").addEventListener("submit", function(event) {
-      var files = document.getElementById("file-upload").files;
-      if (files.length === 0) {
-        document.getElementById("error-message").style.display = "block";
-        event.preventDefault();
-      } else {
-        var formData = new FormData();
-        for (var i = 0; i < files.length; i++) {
-          formData.append('files', files[i]);
-        }
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', '/');
-        xhr.upload.addEventListener('progress', function(e) {
-          if (e.lengthComputable) {
-            var percent = (e.loaded / e.total) * 100;
-            document.querySelector('.progress-bar').style.width = percent + '%';
-            document.querySelector('.progress-bar').setAttribute('aria-valuenow', percent);
-          }
-        });
-        xhr.send(formData);
-      }
-    });
-  </script>
-  <script>
-    document.getElementById("upload-form").addEventListener("submit", function(event) {
-      var files = document.getElementById("file-upload").files;
-      if (files.length === 0) {
-        document.getElementById("error-message").innerText = "Please select at least one file.";
-        document.getElementById("error-message").style.display = "block";
-        event.preventDefault();
-      } else {
-        var formData = new FormData();
-        for (var i = 0; i < files.length; i++) {
-          formData.append('files', files[i]);
-        }
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', '/');
-        xhr.upload.addEventListener('progress', function(e) {
-          if (e.lengthComputable) {
-            var percent = (e.loaded / e.total) * 100;
-            document.querySelector('.progress-bar').style.width = percent + '%';
-            document.querySelector('.progress-bar').setAttribute('aria-valuenow', percent);
-          }
-        });
-        xhr.addEventListener('error', function() {
-          document.getElementById("error-message").innerText = "An error occurred while uploading files.";
-          document.getElementById("error-message").style.display = "block";
-        });
-        xhr.addEventListener('load', function() {
-          if (xhr.status === 200) {
-            // Successful upload
-            // Redirect or do something else
-          } else {
-            document.getElementById("error-message").innerText = "Server returned an error: " + xhr.statusText;
-            document.getElementById("error-message").style.display = "block";
-          }
-        });
-        xhr.send(formData);
-      }
-    });
-  </script>
-  <div id="error-message" class="error-message" style="display: none;"></div>
-
-</body>
-</html>
+  </body>
+  </html>
