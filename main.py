@@ -72,7 +72,7 @@ def translate_and_upload_documents():
                   # Handle other DeepL errors
                   timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                   log.write(f"[{timestamp}] Error occurred: {error}\n")
-  
+                  error = handle_error(deepl.DeepLException)
       # Zip the translated files
       zip_file_name = 'output.zip'
       with zipfile.ZipFile(zip_file_name, 'w') as zipf:
@@ -129,7 +129,7 @@ def submit_data():
     log_to_file(f"Total count of processed files: {PROCESSED_COUNT}")
     translated_files = translate_and_upload_documents()
 
-    return jsonify({"message": "Data submitted successfully", "translated_files": translated_files})
+    return redirect(url_for('download_file'))
 @app.route('/', methods=['GET'])
 
 def index():
