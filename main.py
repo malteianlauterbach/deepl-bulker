@@ -4,10 +4,9 @@ import shutil
 import webbrowser
 import zipfile
 from datetime import datetime
-from flask import jsonify
 
 import deepl
-from flask import Flask, redirect, render_template, request, send_file, url_for
+from flask import Flask, jsonify, redirect, render_template, request, send_file, url_for
 
 app = Flask(__name__)
 
@@ -142,7 +141,6 @@ def index():
 def handle_error(e):
     error_message = "An unexpected error occurred."
     # Log the error for debugging purposes
-    logging.error(str(e))
     return jsonify({"error": error_message}), 500
 
 if __name__ == '__main__':
