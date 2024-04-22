@@ -91,53 +91,49 @@ def download_file():
   log_to_file(f'Translated files downloaded: {zip_file_path}')
   return send_file(zip_file_path, as_attachment=True)
 
-@app.route('/', methods=['GET', 'POST'])
-def index():
+@app.route('/submit', methods=['POST', 'GET'])
+def submit_data():
     global PROCESSED_COUNT
     translated_files = []
 
-    # Reset and empty folders and zip file on page reload
-    if request.method == 'GET':
-        PROCESSED_COUNT = 0
-        log_to_file("Page reloaded. Resetting folders and zip file.")
-        if os.path.exists(QUEUE_FOLDER):
-            log_to_file(f"Emptying {QUEUE_FOLDER} directory.")
-            shutil.rmtree(QUEUE_FOLDER)
-        if os.path.exists(UPLOAD_FOLDER):
-            log_to_file(f"Emptying {UPLOAD_FOLDER} directory.")
-            shutil.rmtree(UPLOAD_FOLDER)
-        if os.path.exists(OUTPUT_FOLDER):
-            log_to_file(f"Emptying {OUTPUT_FOLDER} directory.")
-            shutil.rmtree(OUTPUT_FOLDER)
-        log_to_file("Creating empty directories.")
-        os.makedirs(QUEUE_FOLDER)
-        os.makedirs(UPLOAD_FOLDER)
-        os.makedirs(OUTPUT_FOLDER)
-        if os.path.exists('output.zip'):
-            log_to_file("Removing existing output.zip file.")
-            os.remove('output.zip')
+    PROCESSED_COUNT = 0
+    log_to_file("Data submission received. Resetting folders and zip file.")
+    if os.path.exists(QUEUE_FOLDER):
+        log_to_file(f"Emptying {QUEUE_FOLDER} directory.")
+        shutil.rmtree(QUEUE_FOLDER)
+    if os.path.exists(UPLOAD_FOLDER):
+        log_to_file(f"Emptying {UPLOAD_FOLDER} directory.")
+        shutil.rmtree(UPLOAD_FOLDER)
+    if os.path.exists(OUTPUT_FOLDER):
+        log_to_file(f"Emptying {OUTPUT_FOLDER} directory.")
+        shutil.rmtree(OUTPUT_FOLDER)
+    log_to_file("Creating empty directories.")
+    os.makedirs(QUEUE_FOLDER)
+    os.makedirs(UPLOAD_FOLDER)
+    os.makedirs(OUTPUT_FOLDER)
+    if os.path.exists('output.zip'):
+        log_to_file("Removing existing output.zip file.")
+        os.remove('output.zip')
+    files = request.files.getlist('files')
+    for file in files:
+        filename = file.filename
+        file.save(os.path.join(UPLOAD_FOLDER, filename))
+        log_to_file(f'File Written: {filename}')
+        if filename.endswith('.zip'):
+            process_zip(os.path.join(UPLOAD_FOLDER, filename))
+        else:
+            os.rename(os.path.join(UPLOAD_FOLDER, filename),
+                      os.path.join(QUEUE_FOLDER, filename))
+            log_to_file(f'File Moved to Queue: {filename}')
+        PROCESSED_COUNT += 1
+    log_to_file(f"Total count of processed files: {PROCESSED_COUNT}")
+    translated_files = translate_and_upload_documents()
 
-    if request.method == 'POST':
-        files = request.files.getlist('files')
-        for file in files:
-            filename = file.filename
-            file.save(os.path.join(UPLOAD_FOLDER, filename))
-            log_to_file(f'File Written: {filename}')
-            if filename.endswith('.zip'):
-                process_zip(os.path.join(UPLOAD_FOLDER, filename))
-            else:
-                os.rename(os.path.join(UPLOAD_FOLDER, filename),
-                          os.path.join(QUEUE_FOLDER, filename))
-                log_to_file(f'File Moved to Queue: {filename}')
-            PROCESSED_COUNT += 1
-        log_to_file(f"Total count of processed files: {PROCESSED_COUNT}")
-        translated_files = translate_and_upload_documents(
-        )  # Call translation function after processing files
-        webbrowser.open_new_tab('/download'
-                                )  # Open a new tab with the download route
-        return redirect(url_for('download_file'))  # Redirect to the download route
+    return jsonify({"message": "Data submitted successfully", "translated_files": translated_files})
+@app.route('/', methods=['GET'])
 
-    return render_template('index.html', translated_files=translated_files)
+def index():
+    return render_template('index.html')
 
 
 
